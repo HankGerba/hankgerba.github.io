@@ -7,7 +7,8 @@ function setup() {
 function draw() {
   background(151);
   fill(0);
-  ellipse(mouseX, mouseY, 16, 16);
+  textSize(24);
+  text('hello, yechen', mouseX, mouseY);
 }
 
 function windowResized() {
