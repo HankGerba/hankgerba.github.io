@@ -14,9 +14,10 @@ var particles = [];
 var flowfield;
 
 function setup() {
-  canvas = createCanvas(windowWidth, windowHeight);
-  canvas.position(0, 0);
   myName = select(".myName");
+  let canvas = createCanvas(windowWidth, windowHeight);
+  canvas.position(0, 0);
+
 
 
   colorMode(HSB, 255);
@@ -29,7 +30,7 @@ function setup() {
   for (var i = 0; i < 300; i++) {
     particles[i] = new Particle();
   }
-  background(51);
+  //background(51);
 
 
 }
