@@ -15,7 +15,7 @@ var flowfield;
 
 function setup() {
   myName = select(".myName");
-  myName.style("position", "absolute");
+  myName.position(100, 100);
   let canvas = createCanvas(windowWidth, windowHeight);
   canvas.position(0, 0);
 
@@ -66,7 +66,7 @@ function draw() {
     particles[i].edges();
     particles[i].show();
   }
-  myName.position(100, 100);
+
   fr.html(floor(frameRate()));
 
 
