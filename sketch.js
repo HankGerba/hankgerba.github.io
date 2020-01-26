@@ -15,6 +15,7 @@ var flowfield;
 
 function setup() {
   myName = select(".myName");
+  myName.style("position", "absolute");
   let canvas = createCanvas(windowWidth, windowHeight);
   canvas.position(0, 0);
 
