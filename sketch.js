@@ -1,16 +1,19 @@
+let canvas;
+
+
 function setup() {
-  createCanvas(windowWidth, windowHeight);
-  background(51);
+  canvas = createCanvas(500, 500);
+  canvas.position(0, 0);
 
 }
 
 function draw() {
-  background(151);
+  clear();
   fill(0);
   textSize(24);
   text('hello, yechen', mouseX, mouseY);
 }
 
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
-}
+// function windowResized() {
+//   resizeCanvas(windowWidth, windowHeight);
+// }
