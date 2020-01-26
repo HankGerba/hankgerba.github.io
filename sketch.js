@@ -11,7 +11,6 @@ function draw() {
   clear();
   fill(0);
   textSize(24);
-  text('hello, yechen', mouseX, mouseY);
 }
 
 // function windowResized() {
