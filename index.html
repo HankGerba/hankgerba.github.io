@@ -5,7 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hank Gerba</title>
     <meta name="keywords" content="latex.css,css library,class-less css,latex css" />
-    <link rel="stylesheet" href="https://latex.now.sh/style.css">
+	<link rel="stylesheet" href="https://latex.now.sh/style.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="/resources/demos/style.css">
+	<style>
+		#draggable { width: 150px; height: 150px; padding: 0.5em; }
+		</style>
+		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+		<script>
+		$( function() {
+		  $( "#draggable" ).draggable();
+		} );
+		</script>
+	  
 </head>
 
 <body id="top" class="latex-dark">
@@ -28,6 +41,9 @@
         type="checkbox" id="sn-2" class="sidenote-toggle" /><span class="sidenote">tbd</span>.
 		They are currently finishing their PhD at Stanford University in the Art & Art History Department's Film & Media Program. Their dissertation uses the phenomenon of aliasing to construct a media theoretical account of the body. Use the form below to send me an email, or click here for an résumé / academic CV. 
 		</p>
+	  </div>
+	  <div id="draggable" class="ui-widget-content">
+		<p>Drag me around</p>
 	  </div>
 
 
