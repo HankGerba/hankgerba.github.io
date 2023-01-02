@@ -65,24 +65,26 @@
 		  <form>
 			<fieldset id="forms__input">
 			  <!--<legend>Input fields</legend> -->
-			  <form action="mailto:hank.g@icloud.com" method="post" enctype="text/plain">
+			  <form action="#" id="form" method="post" name="form">
+
 				<p>
 					<label for="input_name">Your name</label>
-					<input id="input__name" type="text" name="name" placeholder="Your name">
+					<input name="vname" placeholder="Your Name" type="text" value="">
 				  </p>
 				<p>
 					<label for="input__emailaddress">Your email</label>
-					<input id="input__emailaddress" type="text" name="mail" placeholder="email@email.com">
+					<input name="vemail" placeholder="Your Email" type="text" value="">
 				</p>
 
 				<p>
 					<label for="textarea">Message</label>
-					<textarea id="textarea" type ="text" name="comment" rows="8" cols="48" placeholder="Enter your message here"></textarea>
+					<textarea id="textarea" type ="text" name="msg" rows="8" cols="48" placeholder="Enter your message here"></textarea>
 				</p>
 
 				<input type="submit" value="Send">
 				<input type="reset" value="Reset">
 			</form>
+			<h3><?php include "secure_email_code.php"?></h3>
 			</fieldset>
 	  </div>
 	</div>
