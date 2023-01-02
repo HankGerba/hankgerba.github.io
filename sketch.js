@@ -1,7 +1,7 @@
 let canvas;
 let myName;
 
-var inc = 0.1;
+var inc = 0.2;
 var scl = 10;
 var cols, rows;
 
