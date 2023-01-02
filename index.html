@@ -62,16 +62,46 @@
 		</p>
 	  <div>
 		  <h2>Contact</h2>
-		  <a href="#forms">Form elements</a>
-          <ul>
-            <li><a href="#forms__input">Input fields</a></li>
-            <li><a href="#forms__select">Select menus</a></li>
-            <li><a href="#forms__checkbox">Checkboxes</a></li>
-            <li><a href="#forms__radio">Radio buttons</a></li>
-            <li><a href="#forms__textareas">Textareas</a></li>
-            <li><a href="#forms__html5">HTML5 inputs</a></li>
-            <li><a href="#forms__action">Action buttons</a></li>
-          </ul>
+		  <form>
+			<fieldset id="forms__input">
+			  <legend>Input fields</legend>
+			  <p>
+				<label for="input__text">Text Input</label>
+				<input id="input__text" type="text" placeholder="Text Input">
+			  </p>
+			  <p>
+				<label for="input__password">Password</label>
+				<input id="input__password" type="password" placeholder="Type your Password">
+			  </p>
+			  <p>
+				<label for="input__webaddress">Web Address</label>
+				<input id="input__webaddress" type="url" placeholder="https://example.com">
+			  </p>
+			  <p>
+				<label for="input__emailaddress">Email Address</label>
+				<input id="input__emailaddress" type="email" placeholder="name@email.com">
+			  </p>
+			  <p>
+				<label for="input__phone">Phone Number</label>
+				<input id="input__phone" type="tel" placeholder="(999) 999-9999">
+			  </p>
+			  <p>
+				<label for="input__search">Search</label>
+				<input id="input__search" type="search" placeholder="Enter Search Term">
+			  </p>
+			  <p>
+				<label for="input__text2">Number Input</label>
+				<input id="input__text2" type="number" placeholder="Enter a Number">
+			  </p>
+			  <p>
+				<label for="input__text3" class="error">Error</label>
+				<input id="input__text3" class="is-error" type="text" placeholder="Text Input">
+			  </p>
+			  <p>
+				<label for="input__text4" class="valid">Valid</label>
+				<input id="input__text4" class="is-valid" type="text" placeholder="Text Input">
+			  </p>
+			</fieldset>
 	  </div>
 	</div>
 	<div id="draggable" class="ui-widget-content">
