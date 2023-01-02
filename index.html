@@ -61,34 +61,32 @@
 		Use the form below to send an email, or click here for a résumé / academic CV. 
 		</p>
 	</div>
-	<div class="container">
+	<div class="container"></div>
 	<div id="feedback">
 		  <h2>Contact</h2>
-		  <form>
 			<fieldset id="forms__input">
 			  <!--<legend>Input fields</legend> -->
-			  <form action="#" id="form" method="post" name="form">
-
-				<p>
-					<label for="input_name">Name</label>
-					<input name="vname" placeholder="Your Name" type="text" value="">
-				  </p>
-				<p>
-					<label for="input__emailaddress">Email</label>
-					<input name="vemail" placeholder="Your Email" type="text" value="">
-				</p>
-
-				<p>
-					<label for="textarea">Message</label>
-					<textarea id="textarea" type ="text" name="msg" rows="8" cols="48" placeholder="Enter your message here"></textarea>
-				</p>
-
-				<input id="send" name="submit" type="submit" value="Send Feedback">
-			</form>
-			<h3><?php include "secure_email_code.php"?></h3>
+			  <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+					  <label for="Name" class="fcf-label">Your name</label>
+					  <div class="fcf-input-group">
+						  <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+					  </div>
+				  <div class="fcf-form-group">
+					  <label for="Email" class="fcf-label">Your email address</label>
+					  <div class="fcf-input-group">
+						  <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+					  </div>
+				  <div class="fcf-form-group">
+					  <label for="Message" class="fcf-label">Your message</label>
+					  <div class="fcf-input-group">
+						  <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+					  </div>
+				  </div>
+				  <div class="fcf-form-group">
+					  <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
+				  </div>
 			</fieldset>
 	  </div>
-	</div>
 	<div id="draggable" class="ui-widget-content">
 		<p>Drag me around</p>
 	</div>
